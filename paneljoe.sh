@@ -10,7 +10,7 @@ mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.old
 cd /etc/nginx
 wget https://raw.githubusercontent.com/gatotkaca2/conf/master/nginx.conf
 cd /etc/nginx/conf.d
-wget https://raw.githubusercontent.com/iyankv/pnnl/master/conf/vps.conf
+wget https://raw.githubusercontent.com/gatotkaca2/conf/master/vps.conf
 sed -i 's/cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php5/fpm/php.ini
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
 useradd -m vps
