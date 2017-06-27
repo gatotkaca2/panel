@@ -22,8 +22,8 @@ service php5-fpm restart
 service nginx restart
 cd /home/vps/public_html
 wget https://raw.githubusercontent.com/gatotkaca2/panel/master/conf/paneljoe.tar
-tar -xvf pnnl.tar
-rm pnnl.tar
+tar -xvf paneljoe.tar
+rm paneljoe.tar
 mysql -u root -p
 chmod 777 /home/vps/public_html/config 
 chmod 777 /home/vps/public_html/config/config.ini 
